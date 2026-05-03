@@ -1,0 +1,63 @@
+.teachers-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 100;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.02);
+}
+
+.teachers-bottom-nav-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+.t-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  width: 70px;
+  position: relative;
+}
+
+.t-nav-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.t-nav-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.t-nav-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.t-nav-item.active-green {
+  color: var(--color-primary);
+  transform: translateY(-8px);
+}
+
+.t-nav-item.active-green .active-circle {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(15, 159, 122, 0.3);
+}

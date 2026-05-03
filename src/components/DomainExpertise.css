@@ -1,0 +1,189 @@
+.domain-expertise {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.domain-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.domain-header-text {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.domain-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.domain-card {
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-math {
+  background-color: var(--color-bg-card);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 32px;
+}
+
+.card-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.math-icon {
+  background-color: rgba(15, 159, 122, 0.1);
+  color: var(--color-primary-dark);
+}
+
+.subject-tag {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.card-desc {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tutors-preview {
+  display: flex;
+  align-items: center;
+}
+
+.tutor-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.tutor-avatar.stacked {
+  margin-left: -12px;
+}
+
+.tutors-count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-left: 12px;
+  font-weight: 500;
+}
+
+.card-science {
+  background-color: var(--color-secondary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.card-title-sm {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.card-desc-sm {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.card-icon-wrapper-sm {
+  color: white;
+  opacity: 0.8;
+}
+
+.card-humanities {
+  background-color: #E2E8F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.text-dark {
+  color: var(--color-text-main);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.icon-gray {
+  color: var(--color-text-muted);
+}
+@media (min-width: 1024px) {
+  .domain-expertise {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .domain-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .card-math {
+    grid-row: 1 / 3;
+    padding: 48px;
+  }
+
+  .card-math .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-science, .card-humanities {
+    padding: 32px;
+  }
+}

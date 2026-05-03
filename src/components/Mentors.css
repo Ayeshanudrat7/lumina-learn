@@ -1,0 +1,125 @@
+.mentors-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: var(--color-bg-light);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.mentors-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 24px auto;
+}
+
+.mentors-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-sm);
+}
+
+.mentors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mentor-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--border-radius-xl);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  margin-bottom: 16px;
+  aspect-ratio: 1;
+}
+
+.mentor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mentor-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--border-radius-pill);
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.badge-green { background-color: var(--color-primary-dark); }
+.badge-purple { background-color: var(--color-secondary); }
+.badge-red { background-color: #E11D48; }
+
+.mentor-info {
+  padding: 0 8px 8px 8px;
+}
+
+.mentor-name {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.mentor-subject {
+  color: var(--color-primary-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.mentor-exp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 1024px) {
+  .mentors-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mentors-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .mentor-card {
+    flex: 1;
+    max-width: 280px;
+  }
+}

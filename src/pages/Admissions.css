@@ -1,0 +1,233 @@
+.admissions-page {
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.a-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.a-hero-badge {
+  display: inline-block;
+  background-color: #F3E8FF;
+  color: #7E22CE;
+  padding: 6px 14px;
+  border-radius: var(--border-radius-pill);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.a-hero-title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+}
+
+.a-text-teal {
+  color: #0F766E;
+}
+
+.a-hero-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin-bottom: 32px;
+}
+
+.a-hero-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.a-btn-primary {
+  background-color: #14B8A6;
+  color: white;
+  padding: 16px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+  transition: all 0.2s ease;
+}
+
+.a-btn-outline {
+  background-color: transparent;
+  color: #7E22CE;
+  border: 1px solid #C084FC;
+  padding: 16px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.a-hero-image-container {
+  width: 100%;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-top: 10px;
+  background-color: white;
+  padding: 8px;
+}
+
+.a-hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  object-fit: cover;
+}
+
+.a-services-section {
+  padding: 24px 0 48px 0;
+}
+
+.a-section-title {
+  font-size: 1.6rem;
+  color: var(--color-text-main);
+  text-align: center;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a-title-underline {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, #14B8A6, #9333EA);
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.a-mb-large {
+  margin-bottom: 48px;
+}
+
+.a-journey-section {
+  padding-bottom: 48px;
+  background: linear-gradient(to bottom, transparent, #F1F5F9);
+  border-radius: 32px;
+  padding: 40px 24px;
+  margin: 0 -24px;
+}
+
+.a-cta-section {
+  background-color: #0F766E;
+  border-radius: 24px;
+  padding: 48px 24px;
+  text-align: center;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.a-cta-title {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.a-cta-subtitle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.a-btn-cta {
+  background-color: white;
+  color: #0F766E;
+  padding: 16px 32px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 700;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.a-btn-cta:hover {
+  transform: translateY(-2px);
+}
+
+.a-floating-chat {
+  position: fixed;
+  bottom: 100px; /* Above the bottom nav */
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #9333EA;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(147, 51, 234, 0.4);
+  z-index: 101;
+  transition: transform 0.2s ease;
+}
+
+.a-floating-chat:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  .a-hero {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .a-hero-content {
+    flex: 1.2;
+  }
+
+  .a-hero-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .a-hero-title {
+    font-size: 4rem;
+  }
+
+  .a-hero-buttons {
+    flex-direction: row;
+    max-width: none;
+  }
+
+  .a-hero-buttons button {
+    width: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .a-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

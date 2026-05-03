@@ -1,0 +1,345 @@
+.contact-page {
+  min-height: 100vh;
+  background-color: #F8FAFC;
+  padding-bottom: 120px;
+}
+
+.c-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.c-badge {
+  display: inline-block;
+  background-color: transparent;
+  color: #7E22CE;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.c-title {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  color: var(--color-text-main);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.c-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.c-card {
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.c-form-card {
+  padding: 32px 24px;
+}
+
+.c-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 24px;
+}
+
+.c-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.c-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.c-input, .c-textarea, .c-select {
+  width: 100%;
+  background-color: #EEF2FF;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.c-input:focus, .c-textarea:focus, .c-select:focus {
+  border-color: #C7D2FE;
+  background-color: white;
+}
+
+.c-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.c-select-wrapper {
+  position: relative;
+}
+
+.c-select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.c-select-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.c-btn-submit {
+  width: 100%;
+  background-color: #065F46; /* Dark Green */
+  color: white;
+  padding: 16px;
+  border-radius: var(--border-radius-pill);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.c-btn-submit:hover {
+  transform: translateY(-2px);
+  background-color: #047857;
+}
+
+.c-direct-connect {
+  background-color: #D1FAE5; /* Light mint/cyan */
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.c-dc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.c-dc-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.c-dc-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.c-dc-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #065F46;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-hq-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-hq-map {
+  position: relative;
+  height: 180px;
+  background-color: #5EEAD4;
+  overflow: hidden;
+}
+
+.c-hq-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: white;
+  color: #0F766E;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 6px 12px;
+  border-radius: var(--border-radius-pill);
+  z-index: 10;
+}
+
+/* Map CSS Placeholder */
+.c-map-visual {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2DD4BF 0%, #0F766E 100%);
+  position: relative;
+  transform: perspective(500px) rotateX(40deg) scale(1.5);
+  transform-origin: center center;
+}
+
+.c-map-grid {
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.c-map-pin {
+  position: absolute;
+  transform: perspective(500px) rotateX(-40deg); /* Counter-rotate to stand up */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
+
+.pin-1 {
+  top: 40%;
+  left: 45%;
+}
+
+.pin-2 {
+  top: 50%;
+  left: 55%;
+}
+
+.c-hq-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.c-hq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.c-hq-icon {
+  color: #7E22CE;
+  margin-top: 2px;
+}
+
+.c-hq-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+}
+
+.c-hq-text span {
+  color: var(--color-text-muted);
+}
+
+.c-mentor-banner {
+  background-color: #F5F3FF;
+  border-radius: 24px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-mentor-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.c-mentor-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -12px;
+  object-fit: cover;
+}
+
+.c-mentor-more {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #7E22CE;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.c-mentor-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.c-mentor-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #C084FC;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.c-mentor-bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3B0764;
+}
+
+@media (min-width: 1024px) {
+  .c-hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .c-title {
+    font-size: 3.5rem;
+    max-width: 800px;
+  }
+
+  .c-content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .c-hq-map {
+    height: 300px;
+  }
+}
