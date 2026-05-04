@@ -8,10 +8,9 @@ import './Teachers.css';
 const Teachers = () => {
   const teachersList = [
     {
-      name: "Dr. Sarah Jenkins",
-      degree: "PhD in Quantum Physics, MIT",
-      subjects: "Advanced Physics, Calculus BC",
-      experience: "12+ Years Academic Coaching",
+      name: "Ayesha",
+      degree: "BS in Physiology, MS in Molecular Genetics",
+      subjects: "Science, Biology, Genetics, Physiology",
       image: "/images/mentor_cs.png",
       badgeColor: "purple"
     },
