@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import ServiceCard from '../components/ServiceCard';
 import JourneyTimeline from '../components/JourneyTimeline';
@@ -54,8 +55,8 @@ const Admissions = () => {
             </p>
 
             <div className="a-hero-buttons">
-              <button className="a-btn-primary">Book Your Free Consultation</button>
-              <button className="a-btn-outline">View Success Stories</button>
+              <Link to="/contact" className="a-btn-primary">Book Your Free Consultation</Link>
+              <Link to="/resources" className="a-btn-outline">View Success Stories</Link>
             </div>
           </div>
 
@@ -96,7 +97,7 @@ const Admissions = () => {
           <p className="a-cta-subtitle">
             Join 500+ students who have successfully secured admissions in top-tier universities across the UK, USA, and Europe this year.
           </p>
-          <button className="a-btn-cta">Book Your Free Consultation</button>
+          <Link to="/contact" className="a-btn-cta">Book Your Free Consultation</Link>
         </section>
       </main>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './DomainExpertise.css';
 
 const DomainExpertise = () => {
@@ -9,9 +10,9 @@ const DomainExpertise = () => {
           <h2 className="section-title">Expertise in Every Domain</h2>
           <p className="section-subtitle">Subjects span a wide array of challenging curricula.</p>
         </div>
-        <a href="#" className="view-all-link">
+        <Link to="/teachers" className="view-all-link">
           View All Subjects
-        </a>
+        </Link>
       </div>
 
       <div className="domain-cards">

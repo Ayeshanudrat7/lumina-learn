@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -18,9 +19,9 @@ const Hero = () => {
         </p>
         
         <div className="hero-buttons">
-          <button className="btn-primary">
+          <Link to="/request" className="btn-primary">
             Request a Tutor
-          </button>
+          </Link>
         </div>
       </div>
       

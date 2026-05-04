@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CallToAction.css';
 
 const CallToAction = () => {
@@ -9,9 +10,9 @@ const CallToAction = () => {
         <p className="cta-desc">
           Connect with a consultant to find your perfect mentor and schedule your first interaction.
         </p>
-        <button className="btn-cta">
+        <Link to="/contact" className="btn-cta">
           Book Free Consultation
-        </button>
+        </Link>
       </div>
     </section>
   );

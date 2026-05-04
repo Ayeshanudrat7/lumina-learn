@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './Resources.css';
@@ -41,9 +42,9 @@ const Resources = () => {
                 <span>Notes &amp; Guides</span>
               </div>
             </div>
-            <button className="r-btn-outline">
+            <Link to="/resources" className="r-btn-outline">
               Browse Library →
-            </button>
+            </Link>
           </section>
 
           {/* Past Papers */}
