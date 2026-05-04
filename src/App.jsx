@@ -1,16 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Teachers from './pages/Teachers';
 import Admissions from './pages/Admissions';
 import RequestTuition from './pages/RequestTuition';
 import Contact from './pages/Contact';
 import Resources from './pages/Resources';
+import Chatbot from './components/Chatbot';
+import LuminaLearnBottomNav from './components/LuminaLearnBottomNav';
 import './App.css';
 
-function App() {
+// Helper component to handle conditional rendering of BottomNav
+const AppContent = () => {
+  const location = useLocation();
+  
+  // Map path to active tab
+  const getActiveTab = () => {
+    const path = location.pathname;
+    if (path === '/') return 'home';
+    if (path === '/teachers') return 'teachers';
+    if (path === '/request') return 'request';
+    if (path === '/resources') return 'resources';
+    if (path === '/contact') return 'contact';
+    return 'home';
+  };
+
   return (
-    <Router>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/teachers" element={<Teachers />} />
@@ -19,6 +35,16 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resources" element={<Resources />} />
       </Routes>
+      <Chatbot />
+      <LuminaLearnBottomNav activeTab={getActiveTab()} />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
