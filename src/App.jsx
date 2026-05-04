@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Teachers from './pages/Teachers';
@@ -13,6 +13,11 @@ import './App.css';
 // Helper component to handle conditional rendering of BottomNav
 const AppContent = () => {
   const location = useLocation();
+  
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   
   // Map path to active tab
   const getActiveTab = () => {
