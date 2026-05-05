@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -15,6 +15,8 @@ const Navbar = () => {
     { path: '/request', label: 'Request' },
     { path: '/contact', label: 'Contact' },
   ];
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,16 +61,17 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="navbar-desktop-links">
-          {navLinks.map(link => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`navbar-link ${location.pathname === link.path ? 'navbar-link-active' : ''}`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link to="/request" className="navbar-cta-btn">Get Started</Link>
+            {navLinks.map(link => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => navigate(link.path)}
+                className={`navbar-link ${location.pathname === link.path ? 'navbar-link-active' : ''}`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link to="/request" onClick={() => navigate('/request')} className="navbar-cta-btn">Get Started</Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -92,13 +95,16 @@ const Navbar = () => {
           <Link
             key={link.path}
             to={link.path}
+            onClick={() => {
+              setMenuOpen(false);
+              navigate(link.path);
+            }}
             className={`navbar-mobile-link ${location.pathname === link.path ? 'navbar-mobile-link-active' : ''}`}
-            onClick={() => setMenuOpen(false)}
           >
             {link.label}
           </Link>
         ))}
-        <Link to="/request" className="navbar-mobile-cta" onClick={() => setMenuOpen(false)}>
+        <Link to="/request" className="navbar-mobile-cta" onClick={() => { setMenuOpen(false); navigate('/request'); }}>
           Get Started
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginLeft: '8px'}}>
             <line x1="5" y1="12" x2="19" y2="12"></line>
