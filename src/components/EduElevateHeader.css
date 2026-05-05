@@ -1,4 +1,4 @@
-.ee-header {
+.ll-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +6,7 @@
   padding-bottom: 20px;
 }
 
-.ee-logo-container {
+.ll-logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -19,13 +19,13 @@
   object-fit: cover;
 }
 
-.ee-logo-text {
+.LL-logo-text {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--color-primary-dark);
 }
 
-.ee-hamburger-btn {
+.ll-hamburger-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,6 @@
   transition: color 0.2s ease;
 }
 
-.ee-hamburger-btn:hover {
+.ll-hamburger-btn:hover {
   color: var(--color-primary-dark);
 }
