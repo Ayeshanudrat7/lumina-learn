@@ -21,9 +21,9 @@ const Chatbot = () => {
 
     // Simulate bot response
     setTimeout(() => {
-      setMessages(prev => [...prev, { 
-        text: "Thanks for reaching out! One of our academic advisors will be with you shortly. In the meantime, feel free to check our Resources section.", 
-        isBot: true 
+      setMessages(prev => [...prev, {
+        text: "Thanks for reaching out! One of our academic advisors will be with you shortly. In the meantime, feel free to check our Resources section.",
+        isBot: true
       }]);
     }, 1000);
   };
@@ -38,7 +38,7 @@ const Chatbot = () => {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
             <div>
-              <h3>EduElevate Support</h3>
+              <h3>LuminaLearn Support</h3>
               <p>Online • AI Assistant</p>
             </div>
           </div>
@@ -58,9 +58,9 @@ const Chatbot = () => {
         </div>
 
         <form className="chat-input" onSubmit={handleSend}>
-          <input 
-            type="text" 
-            placeholder="Type your message..." 
+          <input
+            type="text"
+            placeholder="Type your message..."
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
           />

@@ -6,7 +6,7 @@ const TeachersHeader = () => {
     <header className="teachers-header container">
       <div className="teachers-logo-container">
         <img src="/images/mentor_math.png" alt="User Profile" className="header-avatar" />
-        <span className="teachers-logo-text">EduElevate</span>
+        <span className="teachers-logo-text">LuminaLearn</span>
       </div>
       <div className="header-actions">
         <button className="icon-btn-green">

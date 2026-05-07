@@ -36,7 +36,7 @@ const Resources = () => {
               </div>
             </div>
             <div className="r-notes-image">
-              <img src="/images/notes_placeholder.jpg" alt="Comprehensive Notes" className="r-notes-img" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
+              <img src="/images/notes_placeholder.jpg" alt="Comprehensive Notes" className="r-notes-img" onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'flex'; }} />
               <div className="r-notes-img-fallback">
                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#0D9488" strokeWidth="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                 <span>Notes &amp; Guides</span>
@@ -122,7 +122,7 @@ const Resources = () => {
 
           <div className="r-testimonials-grid">
             <div className="r-testimonial">
-              <p className="r-testimonial-text">"The resources at EduElevate are absolutely unparalleled. The notes alone are 5 that can close gaps I finally closed for me."</p>
+              <p className="r-testimonial-text">"The resources at LuminaLearn are absolutely unparalleled. The notes alone are 5 that can close gaps I finally closed for me."</p>
               <div className="r-testimonial-author">
                 <div className="r-t-avatar r-t-av1"></div>
                 <div>

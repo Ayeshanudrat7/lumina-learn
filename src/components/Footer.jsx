@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-brand">
-          <span className="footer-logo">EduElevate</span>
+          <span className="footer-logo">LuminaLearn</span>
           <p className="footer-desc">
             Empowering your learning with actionable connections and out-of-the-box learning resources.
           </p>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="copyright">© 2026 EduElevate. All rights reserved.</p>
+          <p className="copyright">© 2026 LuminaLearn. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Terms of Use</a>
             <a href="#">Social Media</a>
