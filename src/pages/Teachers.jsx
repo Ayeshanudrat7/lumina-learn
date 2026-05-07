@@ -8,9 +8,11 @@ import './Teachers.css';
 const Teachers = () => {
   const teachersList = [
     {
+
       name: "Ayesha",
       degree: "BS in Physiology, MS in Molecular Genetics",
       subjects: "Science, Biology, Genetics, Physiology",
+      institution: "Government College University Faisalabad, COMSATS University Islamabad",
       image: "/images/mentor_cs.png",
       badgeColor: "purple"
     },
