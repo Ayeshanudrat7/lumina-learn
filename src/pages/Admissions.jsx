@@ -91,10 +91,10 @@ const Admissions = () => {
           <JourneyTimeline />
         </section>
 
-        {/* Scholar Success Stories */}
+        {/* Success Stories */}
         <section className="r-section r-stories-section">
-          <h2 className="r-stories-title">Scholar Success Stories</h2>
-          <p className="r-stories-sub">Join thousands of students who have ascended to their dream universities.</p>
+          <h2 className="r-stories-title">Success Stories</h2>
+          <p className="r-stories-sub">Stories of students who have ascended to their dream universities.</p>
 
           <div className="r-testimonials-grid">
             <div className="r-testimonial">
@@ -102,8 +102,8 @@ const Admissions = () => {
               <div className="r-testimonial-author">
                 <div className="r-t-avatar r-t-av1"></div>
                 <div>
-                  <strong>Alice Chen</strong>
-                  <span>Oxford Mathematics</span>
+                  <strong>Bushra</strong>
+                  <span>University of Lahore</span>
                 </div>
               </div>
             </div>
