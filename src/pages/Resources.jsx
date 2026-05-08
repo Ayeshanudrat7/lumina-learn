@@ -32,7 +32,7 @@ const Resources = () => {
               </div>
               <div>
                 <h2 className="r-section-title">Comprehensive Notes</h2>
-                <p className="r-section-desc">Detailed study guides covering Economics, Physics and Mathematics, crafted to clarity and made for examinations.</p>
+                <p className="r-section-desc">Detailed study guides covering Biology,Chemistry, Physics and Biotechnology, Physiology, Genetics, Microbiology, Medicine, crafted to clarity and made for examinations.</p>
               </div>
             </div>
             <div className="r-notes-image">
