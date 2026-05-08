@@ -19,8 +19,8 @@ const Teachers = () => {
     {
       name: "Ayesha Ahmed",
       degree: "BS in Biotechnology, MS in Molecular Medicine",
-      subjects: "Science, Biology, Chemistry, Physics, Biotechnology, Regenerative Medicine, Cancer"
-       institution: "University of Management and Technology Lahore, National university of Science and Technology Islamabad",
+      subjects: "Science, Biology, Chemistry, Physics, Biotechnology, Regenerative Medicine, Cancer",
+      institution: "University of Management and Technology Lahore, National university of Science and Technology Islamabad",
       experience: "2+ Years",
       image: "/images/mentor_math.png",
       badgeColor: "green"
@@ -29,14 +29,15 @@ const Teachers = () => {
       name: "Naila Aamir",
       degree: "BS Microbiology,MS Medical Microbiology",
       subjects: "Science, Biology, Chemistry, Physics",
+      institution: "Government College University Faisalabad, Quaid-i-Azam University Islamabad",
       image: "/images/mentor_humanities.png",
       badgeColor: "purple"
     },
     {
-      name: "David Chen",
-      degree: "M.S. Economics, LSE",
-      subjects: "AP Economics, Statistics",
-      experience: "Top 1% SAT/ACT Mentor",
+      name: "Arooj Tariq",
+      degree: "BS in Physiology, MS in Molecular Medicine",
+      subjects: "Science, Biology, Chemistry, Physics, Physiology,Regenerative Medicine, Cancer",
+      institution: "Government College University Faisalabad, National University of Science and Technology Islamabad",
       image: "/images/mentor_sciences.png",
       badgeColor: "green"
     }
