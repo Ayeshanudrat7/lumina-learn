@@ -1,20 +1,21 @@
 .footer {
   background-color: var(--color-footer-bg);
   color: white;
-  padding-top: 64px;
-  padding-bottom: 100px; /* Space for bottom nav */
+  padding-top: 34px;
+  padding-bottom: 25px;
+  /* Space for bottom nav */
 }
 
 .footer-brand {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .footer-logo {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-primary);
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 01px;
 }
 
 .footer-desc {
@@ -28,7 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .footer-heading {
@@ -102,7 +103,7 @@
   padding-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 05px;
 }
 
 .copyright {
