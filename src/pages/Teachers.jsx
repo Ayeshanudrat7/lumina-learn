@@ -17,10 +17,10 @@ const Teachers = () => {
       badgeColor: "purple"
     },
     {
-      name: "Marcus Thorne",
-      degree: "M.A. Comparative Literature, Oxford",
-      subjects: "College Essay, AP Literature",
-      experience: "8+ Years Admissions Expert",
+      name: "Ayesha Ahmed",
+      degree: "BS in Biotechnology, MS in Molecular Medicine",
+      subjects: "University of Management and Technology Lahore, National university of Science and Technology Islamabad",
+      experience: "2+ Years",
       image: "/images/mentor_math.png",
       badgeColor: "green"
     },
