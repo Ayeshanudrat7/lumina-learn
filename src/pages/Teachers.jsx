@@ -19,7 +19,8 @@ const Teachers = () => {
     {
       name: "Ayesha Ahmed",
       degree: "BS in Biotechnology, MS in Molecular Medicine",
-      subjects: "University of Management and Technology Lahore, National university of Science and Technology Islamabad",
+      subjects: "Science, Biology, Chemistry, Physics, Biotechnology, Regenerative Medicine, Cancer"
+       institution: "University of Management and Technology Lahore, National university of Science and Technology Islamabad",
       experience: "2+ Years",
       image: "/images/mentor_math.png",
       badgeColor: "green"
