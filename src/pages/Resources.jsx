@@ -75,8 +75,8 @@ const Resources = () => {
           </section>
         </div>
 
-        {/* 500+ Banner */}
-        <section className="r-banner-500">
+        {/* 100+ Banner */}
+        <section className="r-banner-100">
           <div className="r-banner-count">100+</div>
           <div className="r-banner-label">RESOURCES AVAILABLE</div>
           <p className="r-banner-sub">Fresh content added every month based on exam trends.</p>
@@ -96,51 +96,12 @@ const Resources = () => {
           </div>
           <div className="r-quiz-icon-center">
             <div className="r-quiz-icon-bg">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#6D28D9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6D28D9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
             </div>
           </div>
         </section>
 
-        {/* Scholar Success Stories */}
-        <section className="r-section r-stories-section">
-          <h2 className="r-stories-title">Scholar Success Stories</h2>
-          <p className="r-stories-sub">Join thousands of students who have ascended to their dream universities.</p>
 
-          <div className="r-testimonials-grid">
-            <div className="r-testimonial">
-              <p className="r-testimonial-text">"The resources at LuminaLearn are absolutely unparalleled. The notes alone are 5 that can close gaps I finally closed for me."</p>
-              <div className="r-testimonial-author">
-                <div className="r-t-avatar r-t-av1"></div>
-                <div>
-                  <strong>Alice Chen</strong>
-                  <span>Oxford Mathematics</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="r-testimonial">
-              <p className="r-testimonial-text">"I practiced every past paper I could locate. The notes and quiz-based content helped me improve my score by 31%. Just incredible."</p>
-              <div className="r-testimonial-author">
-                <div className="r-t-avatar r-t-av2"></div>
-                <div>
-                  <strong>Jordan Lee</strong>
-                  <span>Oxford Student</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="r-testimonial">
-              <p className="r-testimonial-text">"The flexibility to learn exactly on my terms is simply exceptional. So thankful for this platform helping me achieve my goals."</p>
-              <div className="r-testimonial-author">
-                <div className="r-t-avatar r-t-av3"></div>
-                <div>
-                  <strong>Maya Park</strong>
-                  <span>Cambridge Student</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
       </main>
 

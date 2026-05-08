@@ -37,7 +37,7 @@ const Admissions = () => {
   return (
     <div className="page-wrapper admissions-page">
       <Navbar />
-      
+
       <main className="a-main container">
         {/* Hero Section */}
         <section className="a-hero">
@@ -45,11 +45,11 @@ const Admissions = () => {
             <div className="a-hero-badge">
               YOUR PATH TO GLOBAL SUCCESS
             </div>
-            
+
             <h1 className="a-hero-title">
               Unlock Your Future: <span className="a-text-teal">Expert Admissions Support</span>
             </h1>
-            
+
             <p className="a-hero-subtitle">
               Navigate the complexities of international education with elite mentors. From Ivy League strategy to scholarship discovery, we light the way to your dream university.
             </p>
@@ -71,10 +71,10 @@ const Admissions = () => {
             Our Signature Services
             <div className="a-title-underline"></div>
           </h2>
-          
+
           <div className="a-services-grid">
             {services.map((service, idx) => (
-              <ServiceCard 
+              <ServiceCard
                 key={idx}
                 title={service.title}
                 description={service.description}
@@ -89,6 +89,47 @@ const Admissions = () => {
         <section className="a-journey-section">
           <h2 className="a-section-title a-mb-large">Your Journey to Success</h2>
           <JourneyTimeline />
+        </section>
+
+        {/* Scholar Success Stories */}
+        <section className="r-section r-stories-section">
+          <h2 className="r-stories-title">Scholar Success Stories</h2>
+          <p className="r-stories-sub">Join thousands of students who have ascended to their dream universities.</p>
+
+          <div className="r-testimonials-grid">
+            <div className="r-testimonial">
+              <p className="r-testimonial-text">"The resources at LuminaLearn are absolutely unparalleled. The notes alone are 5 that can close gaps I finally closed for me."</p>
+              <div className="r-testimonial-author">
+                <div className="r-t-avatar r-t-av1"></div>
+                <div>
+                  <strong>Alice Chen</strong>
+                  <span>Oxford Mathematics</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="r-testimonial">
+              <p className="r-testimonial-text">"I practiced every past paper I could locate. The notes and quiz-based content helped me improve my score by 31%. Just incredible."</p>
+              <div className="r-testimonial-author">
+                <div className="r-t-avatar r-t-av2"></div>
+                <div>
+                  <strong>Jordan Lee</strong>
+                  <span>Oxford Student</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="r-testimonial">
+              <p className="r-testimonial-text">"The flexibility to learn exactly on my terms is simply exceptional. So thankful for this platform helping me achieve my goals."</p>
+              <div className="r-testimonial-author">
+                <div className="r-t-avatar r-t-av3"></div>
+                <div>
+                  <strong>Maya Park</strong>
+                  <span>Cambridge Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* CTA Section */}
