@@ -167,41 +167,6 @@ const Contact = () => {
 
           </div>
 
-          <section className="c-mentor-banner">
-
-            <div className="c-mentor-avatars">
-
-              <img
-                src="/images/mentor_humanities.png"
-                alt="Mentor"
-                className="c-mentor-img"
-              />
-
-              <img
-                src="/images/mentor_cs.png"
-                alt="Mentor"
-                className="c-mentor-img"
-              />
-
-              <div className="c-mentor-more">
-                +12
-              </div>
-
-            </div>
-
-            <div className="c-mentor-text">
-
-              <span className="c-mentor-label">
-                TALK TO A
-              </span>
-
-              <span className="c-mentor-bold">
-                Mentor
-              </span>
-
-            </div>
-
-          </section>
 
         </div>
       </main>
