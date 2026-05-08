@@ -60,13 +60,13 @@ const Resources = () => {
             </div>
             <div className="r-papers-list">
               <div className="r-paper-item">
-                <span className="r-paper-name">Advanced Physics A 2023</span>
+                <span className="r-paper-name">Biology</span>
                 <button className="r-download-btn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 </button>
               </div>
               <div className="r-paper-item">
-                <span className="r-paper-name">Pure Mathematics 2023</span>
+                <span className="r-paper-name">Chemistry</span>
                 <button className="r-download-btn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 </button>
@@ -77,36 +77,22 @@ const Resources = () => {
 
         {/* 500+ Banner */}
         <section className="r-banner-500">
-          <div className="r-banner-count">500+</div>
+          <div className="r-banner-count">100+</div>
           <div className="r-banner-label">RESOURCES AVAILABLE</div>
-          <p className="r-banner-sub">Fresh content added every Tuesday based on exam trends.</p>
+          <p className="r-banner-sub">Fresh content added every month based on exam trends.</p>
         </section>
 
         {/* AI-Powered Quizzes */}
         <section className="r-section r-quiz-section">
           <div className="r-section-header">
             <div className="r-icon-box r-icon-orange">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
             </div>
             <div>
               <h2 className="r-section-title">AI-Powered Quizzes</h2>
               <p className="r-section-desc">Test your knowledge with adaptive quizzes that identify your weak spots and suggest targeted study materials.</p>
             </div>
-          </div>
-          <div className="r-quiz-progress">
-            <div className="r-quiz-bar-row">
-              <div className="r-quiz-bar-track">
-                <div className="r-quiz-bar-fill" style={{ width: '74%' }}></div>
-              </div>
-              <span className="r-quiz-percent">74%</span>
-            </div>
-            <div className="r-quiz-meta">
-              <span className="r-quiz-label">Current Accuracy: 74%</span>
-              <div className="r-quiz-user">
-                <div className="r-quiz-avatar"></div>
-                <span>Chen Li</span>
-              </div>
-            </div>
+
           </div>
           <div className="r-quiz-icon-center">
             <div className="r-quiz-icon-bg">
